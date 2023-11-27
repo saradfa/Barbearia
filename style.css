@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #121212;
+  overflow: hidden;
+}
+
+.fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: gold;
+  clip-path: circle(50% at bottom right);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  position: relative;
+  max-width: 150px;
+}
+
+header .menu ul {
+  position: relative;
+  display: flex;
+}
+
+header menu li {
+  list-style: none;
+}
+
+header .menu li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 19px;
+  margin-left: 100px;
+
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .text {
+  position: relative;
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.content .text h2 {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+
+.content .text h2 span {
+  font-size: 2.5em;
+  color: #ffd700;
+}
+
+.content .text p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.content .text a {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10px 25px;
+  background: #ffd700;
+  color: #000000;
+  font-weight: 750;
+  letter-spacing: 4px;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.content .text a:hover {
+  transform: translateY(-10px);
+}
+
+.icons {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons li {
+  list-style: none;
+}
+
+.icons li a {
+  display: inline-block;
+  margin-left: 55px;
+  background: #000000;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.icons li a:hover {
+  background: gold;
+  transform: translateY(-20px);
+}
+
+.icons li a img {
+  filter: invert(1);
+  transform: scale(0.5);
+}
+
+.imagen {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+.imagen img {
+  width: 120px;
+  margin: 0 -5px;
+}
+
+.imagen .img1 {
+  transform: rotate(15deg)
+}
+
+.imagen .img2 {
+  transform: rotate(5deg)
+}
+
+.imagen .img3 {
+  transform: rotate(15deg)
+}
+
+.imagen .img4 {
+  transform: rotate(10deg)
+}
+
+/*serviços*/
+table {
+  margin: 40px 50px;
+}
+
+.servicos{
+  width: 400px;
+  height: 450px;
+}
+
+/*produtos*/
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #121212;
+  color: #ffd700;
+}
+
+.produtos {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+  color: wheat;
+}
+
+.produtos li {
+  display: inline-block;
+  background: black;
+  text-align: center;
+  width: 25%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid gold;
+  border-radius: 10px;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 5px 5px 6px #575757;
+}
+
+.produtos li:hover {
+  border-color: goldenrod;
+  color: #000000;
+  background: goldenrod;
+  border: 2px solid black;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 5px 5px 6px gold;
+}
+
+.produtos li:active {
+  border-color: red;
+}
+
+.produtos li:hover h2 {
+  font-size: 34px;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produtos img {
+  width: 100px;
+  left: 100px;
+  
+}
+
+.produtos-descricao {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.produtos-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/*contato*/
+
+#titulo {
+  font-family: sans-serif;
+  color: gold;
+  font-size: 40px;
+}
+
+#subtitulo {
+  font-family: sans-serif;
+  color: gold;
+  font-size: 20px;
+}
+
+fieldset {
+  border: 0;
+}
+
+.contatos {
+
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #ffffff;
+  margin-left: 4%;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+input,
+select,
+textarea,
+button {
+  border-radius: 5px;
+}
+
+.campo {
+  margin-bottom: 0.3em;
+}
+
+.campo label {
+  margin-bottom: 0.3em;
+  color: #ffffff;
+  display: block;
+}
+
+fieldset.grupo .campo {
+  float: left;
+  margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+  padding: 0.2em;
+  border: 1px solid #C78C19;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  display: block;
+}
+
+.campo select option {
+  padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  background: #ccbbff;
+}
+
+.botao {
+  font-size: 1.2em;
+  background: gold;
+  border: 0;
+  margin-bottom: 1em;
+  color: #000000;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+  background: #000000;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+  color: gold;
+}
+
+.botao select {
+  cursor: pointer;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contato</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="fundo"></div>
+    <header>
+      <a href="index.html"><img src="imagem/logo.png" alt="" class="logo"></a>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a>
+          </li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contatos">
+      <div>
+        <h1 id="titulo">Cadastro da Barbearia</h1>
+        <p id="subtitulo">Como podemos ajudar</p>
+        <br>
+      </div>
+
+
+      <form>
+        <fieldset class="grupo">
+          <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+          </div>
+
+          <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <label for="whatsapp"><strong>Whatsapp</strong></label>
+          <input type="tel" name="whatsapp" id="whatsapp" required>
+        </div>
+
+        <div class="campo">
+          <label><strong><br>Qual o tipo de atendimento?</strong></label>
+          <label>
+            <input type="radio" name="Marcar" id="marca" checked>Marcar Horario
+            <input type="radio" name="Marcar" id="desmarca">Desmarca Horario
+          </label>
+        </div>
+
+        <div class="campo">
+          <label for="Horario"><strong><br>Horario de atendimento</strong></label>
+          <select id="Horario">
+            <option selected disabled value="">selecione</option>
+            <option>Manha</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </div>
+
+        <fieldset class="grupo">
+          <div id="verificar">
+            <label><strong><br>Selecione tipo de serviço:</strong></label>
+            <br>
+            <input type="checkbox" id="opcao-1" name="opcao-1" value="cabelo">
+            <label for="opcao-1">Corta o cabelo</label>
+            <input type="checkbox" id="opcao-2" name="opcao-2" value="barba">
+            <label for="opcao-2">Corta a barba</label>
+            <input type="checkbox" id="opcao-3" name="opcao-3" value="cabelo-barba">
+            <label for="opcao-3">cabelo e barba</label>
+            <input type="checkbox" id="opcao-4" name="opcao-4" value="Sobrancelha">
+            <label for="opcao-4">Sobrancelha </label>
+            <input type="checkbox" id="opcao-5" name="opcao-5" value="Pezinho">
+            <label for="opcao-5">Pezinho</label>
+            <input type="checkbox" id="opcao-6" name="opcao-6" value="Selagem">
+            <label for="opcao-6">Selagem</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <br>
+          <label><strong>Comentario</strong></label>
+          <br>
+          <textarea rows="6" style="width: 26em;" id="Comentario" name="Comentario"></textarea>
+        </div>
+
+        <button class="botao" type="submit"> Enviar... </button>
+
+      </form>
+    </main>
+    <div class="imagen">
+      <img src="imagem/tesoura.png" alt="" class="img1">
+      <img src="imagem/pente.png" alt="" class="img2">
+      <img src="imagem/maq cab.png" alt="" class="img3">
+      <img src="imagem/navalha.png" alt="" class="img4">
+    </div>
+  </section>
+</body>
+
+</html>
